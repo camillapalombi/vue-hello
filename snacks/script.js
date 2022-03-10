@@ -17,7 +17,7 @@ console.log(correctArrNames)*/
 
 // Crea un array di oggetti che rappresentano degli animali.
 // Ogni animale ha un nome, una famiglia e una classe.
-
+/*
 const arrObjAnimals = [
     {
         name : 'Leone',
@@ -52,4 +52,61 @@ const arrMammiferi = arrObjAnimals.filter((elemento) => {
     }
     return false;
 });
-console.log(arrMammiferi);
+console.log(arrMammiferi);*/
+
+
+
+/*
+Crea un array di oggetti che rappresentano delle persone.
+Ogni persona ha un nome, un cognome e un’età.
+Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome
+e cognome e l’indicazione se può guidare, in base all’età.
+*/
+
+const arrPeople = [
+    {
+        name : 'Paolo',
+        surname : 'Giordano',
+        age : 15
+    },
+    {
+        name : 'Chiara',
+        surname : 'Gigghi',
+        age : 50
+    },
+    {
+        name : 'Francesco',
+        surname : 'Ascoli',
+        age : 10
+    },
+    {
+        name : 'Barbara',
+        surname : 'Masche',
+        age : 78
+    },
+    {
+        name : 'Antonio',
+        surname : 'Botto',
+        age : 18
+    },
+    {
+        name : 'Elena',
+        surname : 'Muccini',
+        age : 17
+    }
+];
+
+console.log(arrPeople);
+
+
+let newArrPeople = arrPeople.map((person) => {
+
+    if (person.age < 18) {
+        return `${person.name} ${person.surname} : Non puoi ancora guidare`;
+    } else {
+        return `${person.name} ${person.surname} : Puoi guidare!`;
+    }
+
+});
+
+console.log(newArrPeople);
