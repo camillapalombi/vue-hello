@@ -4,6 +4,8 @@ const app = new Vue({
 
     el : "#app",
     data : {
-        message : 'Hello World!'
+        message : 'Hello World!',
+        srcImg : 'https://picsum.photos/200/300',
+        altImg : 'Random picture from picsum.photos'
     }
 });
